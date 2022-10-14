@@ -39,10 +39,9 @@ header {
 
 main {
 	display: grid;
-	grid-template-columns: 4fr 1fr;
+	grid-template-columns: 3fr 1fr;
 	grid-template-rows: 1fr 1fr;
 	gap: 16px;
-	padding: 16px;
 	background-color: azure;
 }
 
@@ -68,16 +67,6 @@ main {
 	background-color: white;
 }
 
-/* .projects-cards-container .card {
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    min-height: 0;
-    border-radius: 8px;
-	padding: 16px;
-	background-color: white;
-    
-} */
-
 .details {
 	border: none;
 	overflow: hidden;
@@ -98,12 +87,18 @@ main {
 	gap: 16px;
 }
 
-.card-icons-container button {
-	border: none;
-	width: 24px;
-	height: 24px;
-	background-color: transparent;
-	cursor: pointer;
+svg.favorite:hover path {
+    fill: rgb(255, 238, 0);
+    filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.7));
+}
+
+svg.watch-later:hover path {
+    fill: blue;
+    filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.7));
+}
+
+svg.fork:hover path{
+    filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, .7));
 }
 
 .announcements {
