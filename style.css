@@ -107,19 +107,37 @@ svg.fork:hover path{
     filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, .7));
 }
 
-.announcements {
+/* .announcements {
+	background-color: wheat;
+} */
+
+.announcements-cards-container {
 	display: flex;
 	flex-direction: column;
-	background-color: wheat;
+	border-radius: 8px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+	padding: 16px;
+	gap: 16px;
+	background-color: white;
+
+}
+
+.announcements-cards-container .card:not(:last-child) {
+	display: flex;
+	flex-direction: column;
+	border-bottom: 2px solid #D2D2D2;
+	padding-bottom: 16px;
 }
 
 .trends-cards-container {
 	display: flex;
 	flex-direction: column;
+    border-radius: 8px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
     gap: 16px;
     padding: 16px;
 	grid-column: 2/3;
-	background-color: coral;
+	background-color: white;
 }
 
 .trend {
@@ -135,8 +153,12 @@ svg.fork:hover path{
     grid-column: 2/3;
 }
 
-.trend .title:before {
+.trend .title::before {
     content: '@';
+}
+
+.trend .details {
+    margin-left: 1px;
 }
 
 .title {
