@@ -33,8 +33,38 @@ header {
 }
 
 .sidebar {
-	background-color: aqua;
 	grid-row: 1/-1;
+	padding: 16px;
+	background-color: #1992D4;
+	color: white;
+}
+
+.logo {
+	display: flex;
+	gap: 12px;
+	margin-bottom: 24px;
+}
+
+.logo h1 {
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.sidebar ul {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+	margin-left: 2px;
+}
+
+.sidebar li {
+	display: flex;
+	gap: 16px;
+	padding: 8px;
+}
+
+.sidebar li:hover {
+	background-color: #f3f4f617;
 }
 
 main {
@@ -164,3 +194,12 @@ svg.fork:hover path{
 	font-weight: bold;
 }
 
+li {
+	list-style: none;
+}
+
+a {
+	font-size: 20px;
+	color: white;
+	text-decoration: none;
+}
