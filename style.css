@@ -231,9 +231,6 @@ main {
 }
 
 .details {
-	border: none;
-	overflow: hidden;
-	resize: none;
 	font-family: "Roboto";
 	font-size: 16px;
 }
@@ -264,6 +261,13 @@ a {
 	font-size: 20px;
 	color: white;
 	text-decoration: none;
+}
+
+textarea {
+	border: none;
+	outline: none;
+	overflow: hidden;
+	resize: none;
 }
 
 @media (max-width: 954px) {
