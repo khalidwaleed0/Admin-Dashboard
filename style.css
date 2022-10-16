@@ -57,8 +57,9 @@ header {
 	margin-left: 2px;
 }
 
-.sidebar li {
+.sidebar a {
 	display: flex;
+	align-items: center;
 	gap: 16px;
 	padding: 8px;
 }
@@ -119,6 +120,7 @@ main {
 }
 
 svg {
+	display: inline-block;
 	cursor: pointer;
 }
 
