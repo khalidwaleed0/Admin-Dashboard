@@ -15,10 +15,6 @@ body {
 	height: 100%;
 	font-family: "Roboto";
 }
-svg {
-	width: 5px;
-	height: 5px;
-}
 
 body {
 	display: grid;
@@ -99,48 +95,12 @@ main {
 	background-color: white;
 }
 
-.details {
-	border: none;
-	overflow: hidden;
-	resize: none;
-	font-family: "Roboto";
-	font-size: 16px;
-	/* min-height: 0; */
-	/* word-break: break-all; */
-	/* overflow-wrap: break-word; */
-	/* text-overflow: clip; */
-	/* overflow: clip; */
-}
-
 .card-icons-container {
 	display: flex;
 	margin-top: auto;
 	justify-content: end;
 	gap: 16px;
 }
-
-svg {
-	display: inline-block;
-	cursor: pointer;
-}
-
-svg.favorite:hover path {
-    fill: rgb(255, 238, 0);
-    filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.7));
-}
-
-svg.watch-later:hover path {
-    fill: blue;
-    filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.7));
-}
-
-svg.fork:hover path{
-    filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, .7));
-}
-
-/* .announcements {
-	background-color: wheat;
-} */
 
 .announcements-cards-container {
 	display: flex;
@@ -194,6 +154,32 @@ svg.fork:hover path{
 .title {
 	font-size: 18px;
 	font-weight: bold;
+}
+
+.details {
+	border: none;
+	overflow: hidden;
+	resize: none;
+	font-family: "Roboto";
+	font-size: 16px;
+}
+
+svg {
+	cursor: pointer;
+}
+
+svg.favorite:hover path {
+    fill: rgb(255, 238, 0);
+    filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.7));
+}
+
+svg.watch-later:hover path {
+    fill: blue;
+    filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.7));
+}
+
+svg.fork:hover path{
+    filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, .7));
 }
 
 li {
