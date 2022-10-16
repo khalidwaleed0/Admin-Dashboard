@@ -20,12 +20,85 @@ body {
 	display: grid;
 	grid-template-columns: 1fr 4fr;
 	grid-template-rows: 1fr 5fr;
-	background-color: chartreuse;
 }
 
 header {
-	background-color: aliceblue;
-	grid-column: 2/-1;
+	display: flex;
+	flex-direction: column;
+	padding: 12px 24px;
+}
+
+.header-top {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+}
+
+.header-top input {
+	flex: 0.75;
+	border-radius: 16px;
+	border-color: transparent;
+	padding: 8px;
+	background-color: #F1F5F9;
+	font-size: 16px;
+}
+
+.header-top .notifications {
+	padding: 6px;
+	margin-left: auto;
+}
+
+.header-top .notifications:hover {
+	border-radius: 50%;
+	background-color: #f2f3f3;
+}
+
+.profile {
+	border-radius: 50%;
+	padding: 8px;
+	color: white;
+	background-color: #1992D4;
+	font-size: 18px;
+}
+
+.user-welcome .profile {
+	padding: 12px;
+	font-size: 24px;
+}
+
+.user-welcome h3 {
+	font-size: 22px;
+}
+
+.header-bottom {
+	display: flex;
+	align-items: center;
+	margin-top: auto;
+}
+
+.user-welcome {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+}
+
+.profile-btns {
+	display: flex;
+	gap: 16px;
+	margin-left: auto;
+}
+
+.profile-btns button {
+	border-radius: 24px;
+	border-color: transparent;
+	padding: 8px 28px;
+	color: white;
+	background-color: #1992D4;
+	font-size: 16px;
+}
+
+.profile-btns button:hover {
+	filter: brightness(95%);
 }
 
 .sidebar {
@@ -164,7 +237,7 @@ main {
 	font-size: 16px;
 }
 
-svg {
+svg,button {
 	cursor: pointer;
 }
 
