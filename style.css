@@ -350,6 +350,7 @@ textarea {
 	}
 
 	main aside {
+		position: static;
 		grid-row: 4/5;
 	}
 	main {
