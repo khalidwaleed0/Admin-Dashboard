@@ -1,7 +1,7 @@
 document.querySelector(".sidebar-icon").onclick = showSideBar;
 document.querySelector(".btn-close").onclick = closeSideBar;
-document.querySelector("main").onclick = closeSideBar;
-document.querySelector("header").onclick = closeSideBar;
+document.querySelector("main").ontouchstart = closeSideBar;
+document.querySelector("header").ontouchstart = closeSideBar;
 
 function showSideBar(e) {
     e.stopPropagation();
