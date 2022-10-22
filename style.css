@@ -28,7 +28,7 @@ header {
 	display: flex;
 	flex-direction: column;
 	gap: 16px;
-	padding: 12px 24px;
+	padding: 12px;
 }
 
 .header-top {
